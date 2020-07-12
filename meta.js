@@ -9,26 +9,24 @@ module.exports = {
     name: {
       type: 'string',
       required: true,
-      message: 'Project name'
+      message: 'Nome do Projeto'
     },
     description: {
       type: 'string',
       required: false,
-      message: '',
+      message: 'Descrição do Projeto',
       default: 'My Awesome Project'
+    },
+    private: {
+      type: 'boolean',
+      required: false,
+      message: 'O repositôrio é privado',
+      default: false
     },
     author: {
       type: 'string',
       message: 'Author'
-    },
-    extra: {
-      type: 'string',
-      message: 'Extra Messaging!'
     }
   },
-
-  /**
-   * You can add a custom complete message
-   */
-  completeMessage: 'Project Complete!'
+  completeMessage: 'Bom código!'
 };

@@ -1,13 +1,18 @@
 {{ name }}
 ===
-> Your README Description!
+> {{ description }}
 
 {{ description }}
 
 ```bash
-npm install -g @vue/cli
-# OR
-yarn global add @vue/cli
-# Then
-vue init joshvillahermosa/simple-vue-reusable-template sample-app
+# Install dependencies
+npm i
+# OR (recomended)
+yarn
+
+# Start development server
+yarn serve
+
+# Generate build
+yarn bild
 ```
