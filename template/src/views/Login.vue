@@ -83,14 +83,8 @@ export default {
   },
   methods: {
     doLogin () {
-      const { username, password } = this.state
-      this.$http.post('token/', { username, password }).then(
-        res => {
-          const { access } = res.data
-          localStorage.setItem('access', access)
-          this.$router.push({ name: 'home' })
-        }
-      )
+      /** Sua regra de login aqui */
+      this.$router.push({ name: 'home' })
     }
   }
 }
