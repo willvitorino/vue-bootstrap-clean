@@ -28,5 +28,5 @@ module.exports = {
       message: 'Author'
     }
   },
-  completeMessage: 'Bom código!'
+  completeMessage: 'Entre no projeto, instale as dependências e bom código!'
 };
