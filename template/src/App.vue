@@ -6,6 +6,9 @@
       </div>
       <div class="content">
         <router-view />
+        <div class="footer text-monospace text-muted">
+          Desenvolvido por <a target="_blank" href="http://github.com/willvitorino" >William Vitorino</a>
+        </div>
       </div>
     </div>
   </div>
@@ -51,6 +54,13 @@ export default {
         width: 100%;
         overflow-y: scroll;
         background-color: whitesmoke;
+
+        > .footer {
+          width: 100%;
+          padding: 0.25rem 1rem;
+          border-top: solid lightgray thin;
+          text-align: right;
+        }
       }
     }
   }
