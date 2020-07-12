@@ -25,12 +25,8 @@ const router = new VueRouter({
 })
 
 router.beforeResolve((to, from, next) => {
-  const { access } = localStorage
-  if (to.name !== 'login' && !access) {
-    next({ name: 'login' })
-  } else {
-    next()
-  }
+  /* SUA Regra de validação de autenticação */
+  next()
 })
 
 export default router
